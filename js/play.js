@@ -55,7 +55,7 @@ export class Play{
         } else {
           this.scene.sound.play('select');
           this.checked = true;
-          (j + Phaser.Math.Between(0, 1)) > 8?j = j: j += Phaser.Math.Between(0, 1);
+          (j + Phaser.Math.Between(0, 3)) > 8?j = j: j += Phaser.Math.Between(0, 3);
           this.revealTile(tile, j);
           previousTile = tile;
         }
